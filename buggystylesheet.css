@@ -7,8 +7,26 @@ body {
     margin: 0;
     padding: 0;
     overflow: scroll;
-    
     color: black;
+    
+    /*background pic style*/
+    background: url("../minicar.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+html {
+
+
+/*
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+*/
 }
 
 ::-webkit-scrollbar {
@@ -16,75 +34,122 @@ body {
 }
 
 
-
 /* div styles */
-
-#title {
-    width: 100%;
-    height: 150px;
-    position: absolute;
-    top: 0;
-    
-    text-shadow: 1px 3px 9px rgba(150, 150, 150, 1);
-    text-align: center; 
-    line-height: 0;
-    font-family: 'Lobster', 'Raleway', Helvetica, Arial, sans-serif;
-    font-size: 60px;
-}
 
 #description {
     width: 73%;
-    height: 100px;
-    position: relative;
-    top: 170px;
+/*    height: 100px;*/
+/*    position: relative;*/
+/*    top: 170px;*/
+/*    padding-top: 1rem;*/
     margin: auto;
-    
+    background-color: #d0d0d0;
+    background: rgba(255,255,255, 0.35);
+    border-radius: 5px;
+}
+
+p {
+    padding:1rem;
     font-style: italic;
-    font-size: 20px;
+    font-size: 1.5rem;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     text-align: center;
+    font-weight: 400;
+
+}
+.airport {
+    padding:2rem;
+    text-align: center;
+    
+/*    text-shadow: 1px 3px 9px rgba(150, 150, 150, 1);  */
+
+/*    display: inline-block;  */
+/*    margin: auto;*/
 }
 
-#airport {
-    width: 37%;
-    height: 140px;
-    position: relative;
-    top: 180px;
-    margin: auto;
-    
+.date {
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    
-    cursor: pointer;
-}
-
-#date {
-    width: 60%;
-    height: 50px;
-    position: relative;
-    top: 210px;
+/*    text-shadow: 1px 3px 9px rgba(150, 150, 150, 1);  */
+    text-align: center; 
+    width:65%;
     margin: auto;
-    
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    text-shadow: 1px 3px 9px rgba(150, 150, 150, 1);
-        
-    cursor: pointer;
 }
 
 #letsbuggy {
-    width: 100%;
-    height: 100px;
-    position: relative;
-    top: 260px;
-    margin: auto;
+    padding:2rem 2rem 6rem 2rem;
     text-align: center;
-    
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-        
-    cursor: pointer;
+}
+
+.nextbtn {
+    border-radius: 6px;
+    padding: 20px 17px 20px 17px;
+    border: solid #000000 2px;
+    font-size: 2rem;
+    text-decoration: none;
+    color:black;
+    background-color: rgba(255,255,255,.35);
+}
+
+.nextbtn:hover {
+    font-weight: 900;
+    background: rgba(255,255,255, 1);
+}
+
+
+.airportbtn {
+    display: inline-block;
+    margin:0 1.4rem;
+    border-radius: 6px;
+    padding: 45px 60px 45px 60px;
+    border: solid #000000 2px;
+    font-size: 2rem;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color:black;
+    background: rgba(255,255,255, 0.35);
+}
+
+.airportbtn:hover {
+    background: rgba(255,255,255, 1);
+}
+
+.datebtn {
+    display: inline-block;
+    margin: 1rem .4rem;
+    border-radius: 6px;
+    padding: 20px 17px 20px 17px;
+    border: solid #000000 2px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color:black;
+    background: rgba(255,255,255, 0.35);
+}
+
+.datebtn:hover{
+    background: rgba(255,255,255, 1);
+}
+
+
+
+/* text (<p>) styles */
+ 
+#Buggy {
+/*    width: 100%;*/
+/*    height: 150px;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+    
+    text-shadow: 1px 3px 9px rgba(150, 150, 150, 1);
+    text-align: center; 
+/*    line-height: 0; not sure what this does*/
+    font-family: 'Lato', 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 5.5rem;
+    font-weight: 700;
 }
 
 /* image styles */
-
+/*
 img {
     width: 100%;
     height: 100%;
@@ -108,10 +173,10 @@ img {
     margin: auto;
 }
 
-
+*/
 
 /* button styles */
-
+/*
 a {
     text-decoration: none;
     color: black;
@@ -130,13 +195,15 @@ a {
     background-color: grey;
     opacity: 0.4;
 }
-
+*/
+/*
 .airportbtn:active {
-    /* must be same as hover. not working yet */
+     must be same as hover. not working yet 
     background-color: grey;
     opacity: 0.4;
 }
-
+*/
+/*
 .datebtn {
     border-radius: 6px;
     padding: 20px 17px 20px 17px;
@@ -153,10 +220,13 @@ a {
 
 .datebtn:active {
     /* must be same as hover. not working yet */
+/*
     background-color: grey;
     opacity: 0.4;
 }
+*/
 
+/*
 .nextbtn {
     font-size: 25px;
 }
@@ -165,14 +235,16 @@ a {
     font-weight: 900;
 }
 
-.nextbtn:active {
+
+.nextbtn:active {*/
     /* must be same as hover. not working yet */
-}
+/*}
 
-
+*/
 
 /* miscelanious */
 
+/*
 #O {
     float: left;
     text-shadow: 1px 3px 9px rgba(150, 150, 150, 1);
@@ -182,11 +254,12 @@ a {
     float: right;
     text-shadow: 1px 3px 9px rgba(150, 150, 150, 1);
 }
+*/
 
 hr {
-    border: 0;
+    border: 0px;
     color: black;
-    height: 1px;
+    height: 3px;
     background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
