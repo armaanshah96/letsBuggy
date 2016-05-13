@@ -2,7 +2,8 @@
 <html>
     <head>
         <link href = "../buggystylesheet.css" rel = "stylesheet">
-        <link href="../css-social-buttons/social-buttons.css" rel="icons">
+        <link href="../letsBuggy/css-social-buttons/social-buttons.css" rel="icons">
+        <script src="buggy.js"></script>
         
         <title>Buggy</title>
         
@@ -15,7 +16,7 @@
     <body>
 <!--        <img src="../minicar.jpg">-->
         
-        <div id="title">
+        <div>
             <h1 id="Buggy">Buggy</h1>
         </div>
         
@@ -25,31 +26,38 @@
             
         </div>
         <hr>
-        <div class="airport"><span>
-            <a href=# id="O" class="airportbtn">O'HARE</a>
-            <a href=# id="M" class="airportbtn">MIDWAY</a></span>
-        </div>
         
-        <div class="date">
-            <a href=# class="datebtn">June 4th</a>
-            <a href=# class="datebtn">June 5th</a>
-            <a href=# class="datebtn">June 6th</a>
-            <a href=# class="datebtn">June 7th</a>
-            <a href=# class="datebtn">June 8th</a>
-            <a href=# href=# href=# class="datebtn">June 9th</a>
-            <a href=# class="datebtn">June 10th</a>
-            <a href=# class="datebtn">June 11th</a>
-            <a href=# class="datebtn">June 12th</a>
-        </div>
-        
-        <div id="letsbuggy">
-            <a href=# class="nextbtn">Let's Buggy</a>
-        </div>
-        
-<!--
-        <img id="toycar1" src="../BUGGY/toycar.jpg">
-        <img id="toycar2" src="../BUGGY/toycar.jpg">
--->
+        <form name="firstInput" onsubmit="return validateForm()">
+            <div class="airport"><span>
+                <a href=# id="O" class="airportbtn" type="button" name="airport" value="ohare">O'HARE</a>
+                <a href=# id="M" class="airportbtn" type="button" name="airport" value="midway">MIDWAY</a></span>
+            </div>
 
+
+            <div class="date">
+                <button href=# class="datebtn" type="button" name="date" value="june4">June 4th</button>
+                <button href=# class="datebtn" type="button" name="date" value="june5">June 5th</button>
+                <button href=# class="datebtn" type="button" name="date" value="june6">June 6th</button>
+                <button href=# class="datebtn" type="button" name="date" value="june7">June 7th</button>
+                <button href=# class="datebtn" type="button" name="date" value="june8">June 8th</button>
+                <button href=# class="datebtn" type="button" name="date" value="june9">June 9th</button>
+                <button href=# class="datebtn" type="button" name="date" value="june10">June 10th</button>
+                <button href=# class="datebtn" type="button" name="date"
+                        value="june11">June 11th</button>
+                <button href=# class="datebtn" type="button" name="date" value="june12">June 12th</button>
+            </div>
+
+            <div id="letsbuggy">
+                <a href=/2ndpage.html class="nextbtn" type="submit" value="submit">Let's Buggy</a>
+            </div>
+
+        </form>
+        
+        <hr class="mini">
+        
+        <div id="fb">
+        <a href="https://www.facebook.com" class="sb no-border facebook blue">Facebook</a>
+        </div>
+        
     </body>
 </html>
