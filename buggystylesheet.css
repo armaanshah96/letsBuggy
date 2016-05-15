@@ -354,3 +354,30 @@ hr.mini {
     font-size: 5.5rem;
     font-weight: 700;
 }
+
+.input {
+    width:100%;
+    padding:1rem 0;
+    
+/*    text-align: center;*/
+}
+
+input {
+    width:60%;
+    height:2.5rem;
+    font-size:1rem;
+    padding-left:.5rem;
+    display:block;
+    border-radius:8px;
+    margin:.7rem auto;
+    decoration:none;
+    box-sizing: border-box;
+    border: 1px solid #808080;
+}
+
+input[type="submit"] {
+    background: #63d297;
+    border: none;
+
+
+}
